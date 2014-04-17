@@ -6,9 +6,6 @@ import json
 db = web.database(dbn=settings.DBN,
                    db=settings.DATABASE)
 
-def make_obj(cls,params):
-    return cls(**params)
-
 class ModelThing(object):
     '''
     A base class for dabatase models.
